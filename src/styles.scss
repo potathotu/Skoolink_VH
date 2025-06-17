@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
 
 :root {
   --main-bg-color: #071C2D;
-  --button-color: #01F9A3;
-  --main-bg-lighter: #13344E;
+  --main-bg-color-lighter: #13344E;
+  --skooda-green-color: #01F9A3;
+  --skooda-red-color: #F81405;
+  --main-font: "Jost";
+}
+
+body{
+  background-color: var(--main-bg-color);
+  font-size: 40;
+  color: white;
+  font-family: var(--main-font);
 }
