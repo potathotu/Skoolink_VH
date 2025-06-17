@@ -4,7 +4,7 @@
 
     <head>
         
-        <title> </title>
+        <title>Welcome</title>
         <link rel="stylesheet" href="login.scss">
 
     </head>
@@ -18,29 +18,26 @@
 
 
         <p>Identifiant</p>
-        <button class="type"></button>
-  
-
+        <input type="text">
       
         <p>Mot de passe</p>
-        <button class="type"></button>
+        <input type="text">
        
 
         <p class="redirector">Mot de passe oublié ?</p>
 
-        <input type="checkbox"><br>
 
         <!-- <button class="connect"> <img class="dropdown-arrow" src="assets/dropdown-menu.png">Connexion</button> -->
 
-
-        <p-button
-        label="Save" 
-        icon="fa-solid fa-chevron-right" 
-        [rounded]="true"
-        size="large">
-        <svg width="200" height="40" ></svg>
-        </p-button>
+        <div class="test">
+            <input value="remember" class="radio-button" type="radio" >
+            <label for="remember">Se souvenir de moi</label>
+        </div>
         
+
+        <p-button label="Connexion" icon="fa-solid fa-chevron-right" [rounded]="true">
+        </p-button>
+
     </body>
 
 </html>
