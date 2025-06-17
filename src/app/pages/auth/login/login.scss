@@ -51,25 +51,33 @@ input{
 }
 
 input{
-    position: 43, 493;
     background-color: none;
     border-color: white;
     border-radius: 20px;
     border-width: 1px;
 }
 
-.radio-button{
-    width: 25px;
-    height: 25px;
+.radio-group{
+    display: flex;
+    margin-left: 30px;
+
+    
+    input{
+        margin-top: 5px;
+        width: 7%;
+        color: var(--main-bg-color-lighter);
+    }
+
+
+    label{
+        padding: 13px;
+        padding-left: 5px;
+    }
 }
 
-.test{
-    margin-right: 300px;
+.p-button-label{
+    font-weight: 2000;
 }
 
-.p-button{
-    width: 20px;
-    height: 20px;
-}
 
 

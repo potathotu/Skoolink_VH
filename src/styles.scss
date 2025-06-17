@@ -4,7 +4,9 @@
 
 :root {
   --main-bg-color: #071C2D;
+  --main-bg-light: #052640;
   --main-bg-color-lighter: #13344E;
+  --secondary-bg-color: #071725;
   --skooda-green-color: #01F9A3;
   --skooda-red-color: #F81405;
   --main-font: "Jost";
@@ -12,7 +14,6 @@
 
 body{
   background-color: var(--main-bg-color);
-  color: white;
   font-family: var(--main-font);
 }
 

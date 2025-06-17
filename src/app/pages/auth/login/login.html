@@ -11,32 +11,32 @@
 
     <body>
         
-        <img class="logo" src="assets/skooda-logo.png">
-        <h1>SKOOLINK</h1>
+        <div>
+            <img class="logo" src="assets/skooda-logo.png">
+            <h1>SKOOLINK</h1>
+            <h2>CONNEXION</h2>
+        </div>
 
-        <h2>CONNEXION</h2>
-
-
-        <p>Identifiant</p>
-        <input type="text">
-      
-        <p>Mot de passe</p>
-        <input type="text">
-       
+        <div>
+            <p>Identifiant</p>
+            <input type="text" name="User">
+        
+            <p>Mot de passe</p>
+            <input type="text" name="Password">
+        </div>
 
         <p class="redirector">Mot de passe oublié ?</p>
 
 
         <!-- <button class="connect"> <img class="dropdown-arrow" src="assets/dropdown-menu.png">Connexion</button> -->
 
-        <div class="test">
-            <input value="remember" class="radio-button" type="radio" >
+        <div class="radio-group">
+            <input value="remember" class="radio-button" type="radio" name="radio">
             <label for="remember">Se souvenir de moi</label>
-        </div>
+        </div><br>
         
-
-        <p-button label="Connexion" icon="fa-solid fa-chevron-right" [rounded]="true">
-        </p-button>
+        <p-button label="Connexion" size="large" icon="fa-solid fa-chevron-right" [rounded]="true" name="connect-button"></p-button>
+        
 
     </body>
 
