@@ -16,13 +16,18 @@
             <h1>SKOOLINK</h1>
         </div>
 
-        <div>
+        <div class="inputs-container">
             <h2>CONNEXION</h2>
-            <p>Identifiant</p>
-            <input type="text" name="User">
-        
-            <p>Mot de passe</p>
-            <input type="text" name="Password">
+
+            <div class="user-container">
+                <p>Identifiant</p>
+                <input type="text" name="User">
+            </div>
+
+            <div class="password-container">
+                <p>Mot de passe</p>
+                <input type="text" name="Password">
+            </div>
         </div>
 
         <p class="redirector">Mot de passe oublié ?</p>
@@ -31,8 +36,8 @@
         <!-- <button class="connect"> <img class="dropdown-arrow" src="assets/dropdown-menu.png">Connexion</button> -->
 
         <div class="radio-group">
-            <input value="remember" type="radio" name="radio">
-            <label for="remember">Se souvenir de moi</label>
+                <input value="remember" type="checkbox" name="radio">
+                <label for="remember">Se souvenir de moi</label>
         </div>
 
         <p-button routerLink="/new-password" label="Connexion" size="large" icon="fa-solid fa-chevron-right" [rounded]="true" name="connect-button"></p-button>
