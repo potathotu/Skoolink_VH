@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { RadioButtonModule } from 'primeng/radiobutton';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 
 
 @Component({
   selector: 'app-login',
-  imports: [RouterLink, InputTextModule, ButtonModule],
+  imports: [RouterLink, InputTextModule, RadioButtonModule, ButtonModule],
   templateUrl: './login.html',
   styleUrl: './login.scss'
 })
