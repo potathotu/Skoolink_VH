@@ -6,8 +6,8 @@ import { InputTextModule } from 'primeng/inputtext';
 @Component({
   selector: 'app-new-password',
   imports: [InputTextModule, ButtonModule, RadioButtonModule],
-  templateUrl: './new-password.component.html',
-  styleUrl: './new-password.component.scss'
+  templateUrl: './new-password.html',
+  styleUrl: './new-password.scss'
 })
 export class NewPassword {
 

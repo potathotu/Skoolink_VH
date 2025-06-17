@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { Login } from './pages/auth/login/login';
-import { NewPassword } from './pages/auth/new-password/new-password.component';
+import { NewPassword } from './pages/auth/new-password/new-password';
 
 export const routes: Routes = [
     {
