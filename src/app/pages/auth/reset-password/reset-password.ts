@@ -5,10 +5,13 @@ import { InputTextModule } from 'primeng/inputtext';
 
 @Component({
   selector: 'app-reset-password',
-  imports: [RouterLink, ButtonModule, InputTextModule],
+  imports: [ButtonModule, InputTextModule],
   templateUrl: './reset-password.html',
   styleUrl: './reset-password.scss'
 })
 export class ResetPassword {
-
+  
 }
+
+
+
