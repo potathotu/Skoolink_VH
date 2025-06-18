@@ -13,10 +13,10 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './reset-password.scss'
 })
 export class ResetPassword {
-  show = false;
+  showOtpInterface = false;
   
   emailSent(){
-    this.show = true;
+    this.showOtpInterface = true;
   }
 }
 
