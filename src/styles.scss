@@ -12,8 +12,17 @@
   --main-font: "Jost";
 }
 
+html{
+    text-align: center;
+}
+
 body{
-  background-color: var(--main-bg-color);
+  background: url("assets/background.png") ;
+  background-size: cover;
+  min-height: 100vh;
   font-family: var(--main-font);
 }
+
+
+
 
