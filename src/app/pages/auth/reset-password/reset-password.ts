@@ -19,11 +19,16 @@ export class ResetPassword {
     
   // checks if page needs to start from the otp password or mail
   constructor(){
-    this.getLocalIsFromResetPassword = parseInt(localStorage.getItem("isFromResetPassword") || "0")
+    this.getLocalIsFromResetPassword = parseInt(localStorage.getItem("isFromResetPassword") || "0");
     
     if (this.getLocalIsFromResetPassword == 1){
-      this.showOtpInterface = true
+      this.showOtpInterface = true;
     }
+  }
+
+  // will tell the new password interface that the user came from here
+  validOtpPassword(){
+    localStorage.setItem("isFromResetPassword", "1");
   }
 
   // go to otp interface
@@ -31,9 +36,9 @@ export class ResetPassword {
     this.showOtpInterface = true;
   }
 
-  // will tell the new password interface that the user came from here
-  validOtpPassword(){
-    localStorage.setItem("isFromResetPassword", "1");
+  // back button logic for otp interface
+  backButtonFromOtp(){
+    this.showOtpInterface = false;
   }
 }
 

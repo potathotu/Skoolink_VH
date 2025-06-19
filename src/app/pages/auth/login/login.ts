@@ -21,7 +21,7 @@ export class Login {
 
     // check if it's the user's first time logging in
     this.getIfFirstLogIn = parseInt(localStorage.getItem("isFirstLogIn") || "0");
-
+    
     if (this.getIfFirstLogIn == 0){
       this.connectButtonRoute = "/new-password"
     }
