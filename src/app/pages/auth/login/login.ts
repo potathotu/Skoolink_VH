@@ -18,10 +18,10 @@ export class Login {
   constructor(){
     // reset count for reset password back button
     localStorage.setItem("isFromResetPassword", "0");
-
-    // check if it's the user's first time logging in
+  
     this.getIfFirstLogIn = parseInt(localStorage.getItem("isFirstLogIn") || "0");
     
+    // check if it's the user's first time logging in and enables the new password interface if it is
     if (this.getIfFirstLogIn == 0){
       this.connectButtonRoute = "/new-password"
     }
