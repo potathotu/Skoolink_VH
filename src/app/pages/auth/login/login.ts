@@ -25,5 +25,7 @@ export class Login {
     if (this.getIfFirstLogIn == 0){
       this.connectButtonRoute = "/recover-password"
     }
+
+    
   }
 }

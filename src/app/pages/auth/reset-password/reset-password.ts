@@ -25,7 +25,7 @@ export class ResetPassword {
       this.showOtpInterface = true;
     }
   }
-
+  
   // will tell the new password interface that the user came from here
   validOtpPassword(){
     localStorage.setItem("isFromResetPassword", "1");
