@@ -20,6 +20,7 @@ export class ResetPassword {
   // checks if page needs to start from the otp password or mail
   constructor(){
     this.getLocalIsFromResetPassword = parseInt(localStorage.getItem("isFromResetPassword") || "0")
+    
     if (this.getLocalIsFromResetPassword == 1){
       this.showOtpInterface = true
     }
