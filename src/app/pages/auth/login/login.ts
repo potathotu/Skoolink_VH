@@ -16,8 +16,10 @@ export class Login {
   getIfFirstLogIn: number = 0;
 
   constructor(){
+    // reset count for reset password back button
     localStorage.setItem("isFromResetPassword", "0");
 
+    // check if it's the user's first time logging in
     this.getIfFirstLogIn = parseInt(localStorage.getItem("isFirstLogIn") || "0");
 
     if (this.getIfFirstLogIn == 0){

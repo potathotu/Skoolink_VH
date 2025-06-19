@@ -19,6 +19,7 @@ export class NewPassword {
     this.isFromResetPassword = parseInt(localStorage.getItem("isFromResetPassword") || "0")  
   }
 
+  // will stop showing the password interface on log in
   stopFirstLogIn(){
     localStorage.setItem("isFirstLogIn", "1");
   }
