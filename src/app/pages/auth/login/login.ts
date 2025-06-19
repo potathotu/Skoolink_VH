@@ -17,13 +17,12 @@ export class Login {
 
   constructor(){
 
-    this.getIsFirstLogIn = parseInt(localStorage.getItem("isFirstLogIn") || "0");
+    this.getIsFirstLogIn = parseInt(localStorage.getItem("isFirstLogIn") || "1");
 
     if (this.getIsFirstLogIn == 1){
       this.connectButtonRoute = "/new-password";
-      localStorage.setItem("isFirstLogIn","1");
     } else {
-      this.connectButtonRoute = "/login";
+      this.connectButtonRoute = "";
     }
   }
 

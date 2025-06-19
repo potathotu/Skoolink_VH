@@ -14,6 +14,7 @@ export class NewPassword {
 
   isFromResetPassword: number = 0;
 
+  // show or hide back button
   constructor(){
     this.isFromResetPassword = parseInt(localStorage.getItem("isFromResetPassword") || "0")  
   }
