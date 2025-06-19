@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { Login } from './pages/auth/login/login';
-import { NewPassword } from './pages/auth/new-password/new-password';
+import { RecoverPassword } from './pages/auth/recover-password/recover-password';
 import { ResetPassword } from './pages/auth/reset-password/reset-password';
 
 export const routes: Routes = [
@@ -10,8 +10,8 @@ export const routes: Routes = [
     },
 
     {
-        path:"new-password",
-        component: NewPassword,
+        path:"recover-password",
+        component: RecoverPassword,
     },
 
     {

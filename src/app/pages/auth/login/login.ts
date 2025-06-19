@@ -23,7 +23,7 @@ export class Login {
     
     // check if it's the user's first time logging in and enables the new password interface if it is
     if (this.getIfFirstLogIn == 0){
-      this.connectButtonRoute = "/new-password"
+      this.connectButtonRoute = "/recover-password"
     }
   }
 }

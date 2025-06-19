@@ -7,10 +7,10 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-new-password',
   imports: [InputTextModule, ButtonModule, CommonModule, RouterLink],
-  templateUrl: './new-password.html',
-  styleUrl: './new-password.scss'
+  templateUrl: './recover-password.html',
+  styleUrl: './recover-password.scss'
 })
-export class NewPassword {
+export class RecoverPassword {
 
   isFromResetPassword: number = 0;
 
