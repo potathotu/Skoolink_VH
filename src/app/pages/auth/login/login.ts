@@ -13,15 +13,15 @@ import { InputTextModule } from 'primeng/inputtext';
 export class Login {
 
   connectButtonRoute = "";
-  getIfIsFirstLogIn: number = 0;
+  getIfFirstLogIn: number = 0;
 
   constructor(){
-    this.getIfIsFirstLogIn = parseInt(localStorage.getItem("isFirstLogIn") || "0");
+    localStorage.setItem("isFromResetPassword", "0");
 
-    if (this.getIfIsFirstLogIn == 0){
+    this.getIfFirstLogIn = parseInt(localStorage.getItem("isFirstLogIn") || "0");
+
+    if (this.getIfFirstLogIn == 0){
       this.connectButtonRoute = "/new-password"
     }
-
-    console.log(this.getIfIsFirstLogIn)
   }
 }
