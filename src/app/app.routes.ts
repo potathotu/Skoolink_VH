@@ -5,6 +5,12 @@ import { ResetPassword } from './pages/auth/reset-password/reset-password';
 import { DashBoard } from './pages/dashboard/dashboard.component';
 
 export const routes: Routes = [
+    {   
+        path: "",
+        pathMatch: "full",
+        redirectTo: "login"
+    },
+
     {
         path: "login",
         component: Login,

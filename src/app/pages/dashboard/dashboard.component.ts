@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './dashboard.scss'
 })
 export class DashBoard {
+  constructor(){
+    console.log(sessionStorage.getItem("userToken"))
+  }
 
 }

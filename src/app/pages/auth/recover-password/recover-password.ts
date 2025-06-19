@@ -13,15 +13,22 @@ import { RouterLink } from '@angular/router';
 export class RecoverPassword {
 
   isFromResetPassword: number = 0;
+  confirmButtonRoute = "/dashboard";
 
   // show or hide back button
   constructor(){
     this.isFromResetPassword = parseInt(localStorage.getItem("isFromResetPassword") || "0")  
+    
+    if (this.isFromResetPassword == 1){
+      this.confirmButtonRoute = "/login"
+    }
   }
-
-  // will stop showing the password interface on log in
-  stopFirstLogIn(){
-    localStorage.setItem("isFirstLogIn", "1");
+  
+  onConnect(){
+    if (this.isFromResetPassword == 0){
+      sessionStorage.setItem("userToken", "69420");
+      localStorage.setItem("isFirstLogIn", "1");
+    } 
   }
 
 }
