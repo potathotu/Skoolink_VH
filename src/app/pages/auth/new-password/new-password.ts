@@ -20,7 +20,7 @@ export class NewPassword {
   }
 
   stopFirstLogIn(){
-    localStorage.setItem("isFirstLogin", "0");
+    localStorage.setItem("isFirstLogIn", "1");
   }
 
 }
