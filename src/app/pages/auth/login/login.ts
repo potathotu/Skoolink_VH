@@ -14,12 +14,10 @@ export class Login {
 
   connectButtonRoute = "";
   getIsFirstLogIn: number = 0;
-  isFirstLogIn = false;
 
   constructor(){
-    localStorage.setItem("isFromResetPassword", "0");
 
-    this.getIsFirstLogIn = parseInt(localStorage.getItem("isFirstLogIn") || "1");
+    this.getIsFirstLogIn = parseInt(localStorage.getItem("isFirstLogIn") || "0");
 
     if (this.getIsFirstLogIn == 1){
       this.connectButtonRoute = "/new-password";
