@@ -40,6 +40,7 @@ export class ResetPassword {
   backButtonFromOtp(){
     this.showOtpInterface = false;
   }
+  
 }
 
 

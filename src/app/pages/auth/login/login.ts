@@ -6,38 +6,32 @@ import { InputTextModule } from 'primeng/inputtext';
 
 @Component({
   selector: 'app-login',
-  imports: [RouterLink, InputTextModule, RadioButtonModule, ButtonModule],
+  imports: [InputTextModule, RadioButtonModule, ButtonModule, RouterLink],
   templateUrl: './login.html',
   styleUrl: './login.scss'
 })
 export class Login {
 
-  connectButtonRoute = "";
-  getIfFirstLogIn: number;
+  getNotFirstLogIn: number;
 
   constructor(private router: Router){
-
     // redirects to dashboard if already logged in
-    if (!(sessionStorage.getItem("userToken") == null)){
+    if (sessionStorage.getItem("userToken")){
       this.router.navigate(["/dashboard"])
     }
 
-    // reset count for reset password back button
+    // removes reset password back button
     localStorage.setItem("isFromResetPassword", "0");
-    this.getIfFirstLogIn = parseInt(localStorage.getItem("isFirstLogIn") || "0");
-  
-    // check if it's the user's first time logging in and enables the new password interface if it is
-    if (this.getIfFirstLogIn == 0){
-      this.connectButtonRoute = "/recover-password";
-    } else{
-      this.connectButtonRoute = "/dashboard";
-    }    
+    this.getNotFirstLogIn = parseInt(localStorage.getItem("isFirstLogIn") || "0");
   }
 
-  // saves user token if it isn't their first time logging in
+  // saves user token if it isn't their first time logging in and sends to change password or dashboard
   onConnect(){
-    if (this.getIfFirstLogIn == 1){
-    sessionStorage.setItem("userToken", "69420");
+    if (this.getNotFirstLogIn == 1){
+      sessionStorage.setItem("userToken", "69420");
+      this.router.navigate(["/dashboard"])
+    } else{
+      this.router.navigate(["/recover-password"])
     }
   } 
 
