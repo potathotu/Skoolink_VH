@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { Login } from './pages/auth/login/login';
 import { RecoverPassword } from './pages/auth/recover-password/recover-password';
 import { ResetPassword } from './pages/auth/reset-password/reset-password';
-import { DashBoard } from './pages/dashboard/dashboard.component';
+import { DashBoard } from './pages/dashboard/dashboard';
 
 export const routes: Routes = [
     {   
