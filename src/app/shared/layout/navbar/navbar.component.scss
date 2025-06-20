@@ -1,56 +1,65 @@
-.navwrapper{
-    text-align: left;
+.container{
     display: flex;
     justify-content: center;
 
-    .navbar-content{
-        height: 164.24px;
-        width: 412px;
-
-        background-image: linear-gradient(180deg, var(--main-bg-light), var(--secondary-bg-color));
-        
+    .navwrapper{
+        text-align: left;
         display: flex;
-        flex-direction: row;
-        align-items: center;
         justify-content: center;
-        
-        .navbar-button-container{
-            border-style: solid;
-            border-color: black;
+        bottom: 0;
+        position: fixed;
 
-            border-radius: 20px;
-            width: 390px;
-            height: 85px;
-            margin-bottom: 30px;
+        .navbar-content{
+            height: 164.24px;
+            width: 412px;
 
+            background-image: linear-gradient(180deg, var(--main-bg-light), var(--secondary-bg-color));
+            
             display: flex;
             flex-direction: row;
             align-items: center;
-            background-color: var(--main-bg-light);
+            justify-content: center;
             
-
-            ::ng-deep .p-button{
-                margin-left: 15px;
-                width: 58.33px;
-                height: 58.33px;
-                border-radius: 20px;
-                background-color: #041E33;
+            .navbar-button-container{
+                border-style: solid;
                 border-color: black;
-                border-width: 2px;
+
+                border-radius: 20px;
+                width: 390px;
+                height: 85px;
+                margin-bottom: 30px;
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                background-color: var(--main-bg-light);
+                
+
+                ::ng-deep .p-button{
+                    margin-left: 15px;
+                    width: 58.33px;
+                    height: 58.33px;
+                    border-radius: 20px;
+                    background-color: #041E33;
+                    border-color: black;
+                    border-width: 2px;
+                    color: white;
+                    
+                }
             }
         }
-    }
 
-    hr{
-        margin-bottom: 0;
-        width: 100%;
-        height: 6px;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-        background-image: linear-gradient(0, var(--main-bg-light), var(--linear-gradient-color));
-        border-style: hidden;
-        text-align: center;
+        hr{
+            margin-bottom: 0;
+            width: 100%;
+            height: 6px;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            background-image: linear-gradient(0, var(--main-bg-light), var(--linear-gradient-color));
+            border-style: hidden;
+            text-align: center;
 
-        box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+        }
     }
 }
