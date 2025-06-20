@@ -9,4 +9,13 @@ import { ButtonModule } from 'primeng/button';
 })
 export class TopbarComponent {
 
+  sectionName: string = "";
+
+  constructor(){
+    this.sectionName = localStorage.getItem("sectionName") || "not valid"
+  }
+
+  changeSectionName(newname: string){
+    this.sectionName = newname
+  }
 }

@@ -1,0 +1,15 @@
+<div class="container">
+    <p-button *ngFor="let thematique of thematiques">
+        <div class="button-container">
+            <img src="assets/angular-logo.png">
+            <div class="text-container">
+                <h1>{{ thematique.title }}</h1>
+                <div class="status">
+                    <img src="assets/ongoing-icon.png">
+                    <h2>En cours</h2>
+                </div>
+                <h3>22 mai – 26 juin</h3>
+            </div>
+        </div>
+    </p-button>
+</div>

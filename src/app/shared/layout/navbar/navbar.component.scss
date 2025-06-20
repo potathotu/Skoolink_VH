@@ -6,8 +6,8 @@
         text-align: left;
         display: flex;
         justify-content: center;
-        bottom: 0;
         position: fixed;
+        bottom: 0;
 
         .navbar-content{
             height: 164.24px;
@@ -44,7 +44,17 @@
                     border-color: black;
                     border-width: 2px;
                     color: white;
+                    
+                    .p-button-icon{
+                        font-size: 1.5rem;
+                    }
+
+                    ::ng-deep .p-button .activeRoute{
+                        border-width: 1000px;
+                    }
                 }
+
+
             }
         }
 
@@ -62,6 +72,5 @@
         }
     }
 }
-
 
 

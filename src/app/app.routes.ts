@@ -2,8 +2,9 @@ import { Routes } from '@angular/router';
 import { Login } from './pages/auth/login/login';
 import { RecoverPassword } from './pages/auth/recover-password/recover-password';
 import { ResetPassword } from './pages/auth/reset-password/reset-password';
-import { DashBoard } from './pages/dashboard/dashboard';
 import { LayoutComponent } from './shared/layout/layout.component';
+import { DashBoard } from './pages/dashboard/dashboard';
+import { Thematiques } from './pages/thematiques/thematiques';
 
 export const routes: Routes = [
     {   
@@ -34,6 +35,11 @@ export const routes: Routes = [
             {
                 path:"dashboard",
                 component: DashBoard,
+            },
+
+            {
+                path:"thematiques",
+                component: Thematiques,
             }
         ]
     }
