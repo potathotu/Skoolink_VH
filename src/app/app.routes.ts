@@ -3,6 +3,7 @@ import { Login } from './pages/auth/login/login';
 import { RecoverPassword } from './pages/auth/recover-password/recover-password';
 import { ResetPassword } from './pages/auth/reset-password/reset-password';
 import { DashBoard } from './pages/dashboard/dashboard';
+import { LayoutComponent } from './shared/layout/layout.component';
 
 export const routes: Routes = [
     {   
@@ -27,7 +28,13 @@ export const routes: Routes = [
     },
 
     {
-        path:"dashboard",
-        component: DashBoard,
+        path: "",
+        component: LayoutComponent,
+        children:[
+            {
+                path:"dashboard",
+                component: DashBoard,
+            }
+        ]
     }
 ];
