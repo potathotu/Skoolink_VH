@@ -12,7 +12,7 @@ export class TopbarComponent {
   sectionName: string = "";
 
   constructor(){
-    this.sectionName = localStorage.getItem("sectionName") || "not valid"
+    this.sectionName = localStorage.getItem("sectionName") || "Tableau de bord"
   }
 
   changeSectionName(newname: string){
