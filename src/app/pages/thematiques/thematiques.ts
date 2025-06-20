@@ -1,14 +1,20 @@
-import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { ButtonModule } from 'primeng/button';
+import { BadgeModule } from 'primeng/badge';
+import { OverlayBadgeModule } from 'primeng/overlaybadge';
+
+
 
 @Component({
   selector: 'app-thematiques',
-  imports: [ButtonModule, NgFor],
+  imports: [ButtonModule, CommonModule, BadgeModule,OverlayBadgeModule],
   templateUrl: './thematiques.html',
   styleUrl: './thematiques.scss'
 })
 export class Thematiques {
+  
+  toggle = true;
   
   thematiques = [
     {

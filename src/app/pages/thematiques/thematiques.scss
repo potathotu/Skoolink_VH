@@ -50,10 +50,18 @@
                         flex-direction: row;
                         align-items: center;
 
-                        img{
-                            margin: 0;
+                        ::ng-deep .p-badge.finishedBadge{
+                            margin-bottom: 2px;
                             width: 15px;
                             height: 15px;
+                            background-color: #01F9A3;
+                        }
+
+                        ::ng-deep .p-badge.ongoingBadge{
+                            margin-bottom: 2px;
+                            width: 15px;
+                            height: 15px;
+                            background-color: #FEC72A;
                         }
 
                         h2{
