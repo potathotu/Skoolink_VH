@@ -1,5 +1,6 @@
 .container{
     margin-top: 115px;
+
     .button-container{
 
         ::ng-deep .p-button{
@@ -8,8 +9,8 @@
             width: 375px;
             height: 140px;
             padding-left: 0;
+            margin-left: 0;
             border: 1.25px double transparent;
-        
             background-image: linear-gradient(180deg, var(--main-bg-light), var(--secondary-bg-color)), linear-gradient(90deg, var(--skooda-red-color), var(--skooda-green-color));
             background-origin: border-box;
             background-clip: padding-box, border-box;
@@ -35,11 +36,13 @@
                     text-align: left;
 
                     h2{
+                        margin-bottom: 10px;
                         font-size: 20px;
                         font-weight: 200; 
                     }
 
                     h4{
+                        margin-top: 10px;
                         color: #838E96;
                         font-size: 12px;
                         font-weight: 1;

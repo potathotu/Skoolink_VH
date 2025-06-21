@@ -33,7 +33,6 @@
                 flex-direction: row;
                 align-items: center;
                 background-color: var(--main-bg-light);
-                
 
                 ::ng-deep .p-button{
                     margin-left: 15px;
@@ -48,13 +47,11 @@
                     .p-button-icon{
                         font-size: 1.5rem;
                     }
-
-                    ::ng-deep .p-button .activeRoute{
-                        border-width: 1000px;
-                    }
                 }
 
-
+                .currentSection{
+                    background: white;
+                }
             }
         }
 
