@@ -13,9 +13,7 @@ import { OverlayBadgeModule } from 'primeng/overlaybadge';
   styleUrl: './thematiques.scss'
 })
 export class Thematiques {
-  
-  toggle = true;
-  
+
   thematiques = [
     {
       id: 1,

@@ -8,7 +8,7 @@
             width: 375px;
             height: 140px;
             padding-left: 0;
-            border: double 1.25px transparent;
+            border: 1.25px double transparent;
         
             background-image: linear-gradient(180deg, var(--main-bg-light), var(--secondary-bg-color)), linear-gradient(90deg, var(--skooda-red-color), var(--skooda-green-color));
             background-origin: border-box;
@@ -34,12 +34,12 @@
                     flex-direction: column;
                     text-align: left;
 
-                    h1{
+                    h2{
                         font-size: 20px;
                         font-weight: 200; 
                     }
 
-                    h3{
+                    h4{
                         color: #838E96;
                         font-size: 12px;
                         font-weight: 1;
@@ -50,21 +50,21 @@
                         flex-direction: row;
                         align-items: center;
 
-                        ::ng-deep .p-badge.finishedBadge{
+                        .finishedBadge{
                             margin-bottom: 2px;
                             width: 15px;
                             height: 15px;
                             background-color: #01F9A3;
                         }
 
-                        ::ng-deep .p-badge.ongoingBadge{
+                        .ongoingBadge{
                             margin-bottom: 2px;
                             width: 15px;
                             height: 15px;
                             background-color: #FEC72A;
                         }
 
-                        h2{
+                        h3{
                             margin-left: 5px;
                             margin-top: 0;
                             margin-bottom: 0;

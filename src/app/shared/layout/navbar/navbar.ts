@@ -6,10 +6,10 @@ import { ButtonModule } from 'primeng/button';
 @Component({
   selector: 'app-navbar',
   imports: [ButtonModule, RouterModule],
-  templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss'
+  templateUrl: './navbar.html',
+  styleUrl: './navbar.scss'
 })
-export class NavbarComponent {
+export class Navbar {
 
 }
 

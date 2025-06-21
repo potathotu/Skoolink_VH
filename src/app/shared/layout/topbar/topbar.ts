@@ -4,10 +4,10 @@ import { ButtonModule } from 'primeng/button';
 @Component({
   selector: 'app-topbar',
   imports: [ButtonModule],
-  templateUrl: './topbar.component.html',
-  styleUrl: './topbar.component.scss'
+  templateUrl: './topbar.html',
+  styleUrl: './topbar.scss'
 })
-export class TopbarComponent {
+export class TopBar {
 
   sectionName: string = "";
 
