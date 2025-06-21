@@ -9,8 +9,4 @@ import { Component } from '@angular/core';
 })
 export class DashBoard {
 
-  constructor(){
-    localStorage.setItem("sectionName", "Tableau de bord")
-  }
-
 }
