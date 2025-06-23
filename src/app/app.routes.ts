@@ -5,6 +5,7 @@ import { ResetPassword } from './pages/auth/reset-password/reset-password';
 import { LayoutComponent } from './shared/layout/layout.component';
 import { DashBoard } from './pages/dashboard/dashboard';
 import { Thematiques } from './pages/thematiques/thematiques';
+import { Projets } from './pages/projets/projets';
 
 export const routes: Routes = [
     {   
@@ -40,6 +41,11 @@ export const routes: Routes = [
             {
                 path:"thematiques",
                 component: Thematiques,
+            },
+            
+            {
+                path:"projets",
+                component: Projets
             }
         ]
     }
