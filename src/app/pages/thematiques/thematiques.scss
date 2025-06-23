@@ -11,70 +11,79 @@
             padding-left: 0;
             margin-left: 0;
             border: 1.25px double transparent;
-            background-image: linear-gradient(180deg, var(--main-bg-light), var(--secondary-bg-color)), linear-gradient(90deg, var(--skooda-red-color), var(--skooda-green-color));
+            background-image: linear-gradient(180deg, var(--main-bg-light), var(--secondary-bg-color)), linear-gradient(0, var(--main-bg-light), var(--linear-gradient-color));
             background-origin: border-box;
             background-clip: padding-box, border-box;
 
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
 
-            .content-container{
+        .currentThematique{
+            ::ng-deep p.button{
+                border: 1.25px double transparent;
+                background-image: linear-gradient(180deg, var(--main-bg-light), var(--secondary-bg-color)), linear-gradient(90deg, var(--skooda-red-color), var(--skooda-green-color));
+                background-origin: border-box;
+                background-clip: padding-box, border-box;
+            }
+        }
+
+        .content-container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            img{
+                margin-right: 15px;
+                width: 80px;
+                height: 88px;
+            }
+
+            .text-container{
+                font-family: var(--secondary-font);
+                color: white;
                 display: flex;
-                flex-direction: row;
-                align-items: center;
-                
-                img{
-                    margin-right: 15px;
-                    width: 80px;
-                    height: 88px;
+                flex-direction: column;
+                text-align: left;
+
+                h2{
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                    font-weight: 200; 
                 }
 
-                .text-container{
-                    font-family: var(--secondary-font);
-                    color: white;
+                h4{
+                    margin-top: 10px;
+                    color: #838E96;
+                    font-size: 12px;
+                    font-weight: 1;
+                }
+
+                .status{
                     display: flex;
-                    flex-direction: column;
-                    text-align: left;
+                    flex-direction: row;
+                    align-items: center;
 
-                    h2{
-                        margin-bottom: 10px;
-                        font-size: 20px;
-                        font-weight: 200; 
+                    .finishedBadge{
+                        margin-bottom: 2px;
+                        width: 15px;
+                        height: 15px;
+                        background-color: #01F9A3;
                     }
 
-                    h4{
-                        margin-top: 10px;
-                        color: #838E96;
-                        font-size: 12px;
-                        font-weight: 1;
+                    .ongoingBadge{
+                        margin-bottom: 2px;
+                        width: 15px;
+                        height: 15px;
+                        background-color: #FEC72A;
                     }
 
-                    .status{
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-
-                        .finishedBadge{
-                            margin-bottom: 2px;
-                            width: 15px;
-                            height: 15px;
-                            background-color: #01F9A3;
-                        }
-
-                        .ongoingBadge{
-                            margin-bottom: 2px;
-                            width: 15px;
-                            height: 15px;
-                            background-color: #FEC72A;
-                        }
-
-                        h3{
-                            margin-left: 5px;
-                            margin-top: 0;
-                            margin-bottom: 0;
-                            color:  #E6E9EA;
-                            font-size: 13px;
-                            font-weight: 1;                
-                        }
+                    h3{
+                        margin-left: 5px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        color:  #E6E9EA;
+                        font-size: 13px;
+                        font-weight: 1;                
                     }
                 }
             }

@@ -1,6 +1,6 @@
 <div class="container">
     <div class="button-container" *ngFor="let thematique of thematiques">
-        <p-button>
+        <p-button [ngClass]="'currentThematique'">
             <div class="content-container">
                 <img src={{thematique.img}}>
                 <div class="text-container">
