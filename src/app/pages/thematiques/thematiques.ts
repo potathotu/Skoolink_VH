@@ -51,10 +51,5 @@ export class Thematiques {
       status: "Terminé"
     }
   ];
-
-  constructor(){
-    localStorage.setItem("sectionName","Thématiques");
-  }
-
   
 }
