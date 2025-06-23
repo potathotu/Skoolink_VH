@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PageService } from 'app/shared/service/page/page.service';
 
 
 @Component({
@@ -9,4 +10,7 @@ import { Component } from '@angular/core';
 })
 export class DashBoard {
 
+  constructor(private _pageService: PageService){
+    this._pageService.title = "DashBoard"
+  }
 }

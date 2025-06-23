@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ButtonModule } from 'primeng/button';
 import { BadgeModule } from 'primeng/badge';
 import { OverlayBadgeModule } from 'primeng/overlaybadge';
+import { PageService } from 'app/shared/service/page/page.service';
 
 
 
@@ -14,14 +15,14 @@ import { OverlayBadgeModule } from 'primeng/overlaybadge';
 })
 export class Thematiques {
 
-  thematiques = [
+  thematiques: any = [
     {
       id: 1,
       title: "Introduction à Angular",
       img: "assets/angular-logo.png",
       startAt: "22 mai",
       endAt: "26 juin",
-      status: "En cours"
+      status: "En cours",
     },
 
     {
@@ -52,4 +53,27 @@ export class Thematiques {
     }
   ];
   
+  constructor(private _pageService: PageService){
+    this.initThematiques();
+    this._pageService.title = "Thématique";
+  }
+
+  initThematiques(){
+    this.thematiques.forEach((thematique: any) => {
+      thematique.isActive = false;
+    })
+  }
+
+  selectThematique(thematiqueId: number){
+    this.thematiques.forEach((thematique: any) => {
+      
+      if (thematique.id == thematiqueId){
+        thematique.isActive = !thematique.isActive;
+      }
+      else{
+        thematique.isActive = false;
+      }
+
+    })
+  }
 }

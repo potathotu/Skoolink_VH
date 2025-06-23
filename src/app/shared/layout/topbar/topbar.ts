@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PageService } from 'app/shared/service/page/page.service';
 import { ButtonModule } from 'primeng/button';
 
 @Component({
@@ -8,11 +9,8 @@ import { ButtonModule } from 'primeng/button';
   styleUrl: './topbar.scss'
 })
 export class TopBar {
-
-  sectionName: string = "Tableau de bord";
-
-  changeSectionName(newname: string){
-    this.sectionName = newname;
-  }
   
+  constructor(public pageService: PageService){
+    
+  }
 }

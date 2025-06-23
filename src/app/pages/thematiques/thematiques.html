@@ -1,6 +1,6 @@
 <div class="container">
     <div class="button-container" *ngFor="let thematique of thematiques">
-        <p-button [ngClass]="'currentThematique'">
+        <p-button (click)="selectThematique(thematique.id)" [ngClass]="{'selectedThematique': thematique?.isActive}">
             <div class="content-container">
                 <img src={{thematique.img}}>
                 <div class="text-container">
