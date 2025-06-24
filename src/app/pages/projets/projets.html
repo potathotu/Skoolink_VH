@@ -8,17 +8,20 @@
                 <hr>
 
                 <div class="projets-container">
-
+                    
                     <p-button *ngFor="let projet of theme.projets" [ngClass]="{'ongoing-project': projet.status == 'En cours', 'finished-project': projet.status == 'Terminé'}">
-                        <div> 
-                            <p>°{{projet.number}}</p>
-                            <img src="{{projet.img}}">
-                            <hr>
-                            <h3>{{projet.name}}</h3>
-                            <h4>{{projet.startAt}} – {{projet.endAt}}</h4>
-                        </div>
+                        <a href="{{projet.link}}">
+                            <div> 
+                                
+                                <p>°{{projet.number}}</p>
+                                <img src="{{projet.img}}">
+                                <hr>
+                                <h3>{{projet.name}}</h3>
+                                <h4>{{projet.startAt}} – {{projet.endAt}}</h4>
+                            </div>
+                         </a>
                     </p-button>
-
+                   
                 </div>
 
             </div>

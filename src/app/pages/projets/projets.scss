@@ -120,7 +120,8 @@
                     margin-top: 15px;
                     border: 1.25px double transparent;
                     background-image: linear-gradient(180deg, var(--main-bg-light), var(--secondary-bg-color)), linear-gradient(0, var(--main-bg-light), var(--linear-gradient-color));
-                    
+                    opacity: 50%;
+
                     background-origin: border-box;
                     background-clip: padding-box, border-box;
 
@@ -179,4 +180,8 @@
         border: 0;
         background-image: linear-gradient(90deg,rgba(0, 35, 58, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(0, 35, 58, 1) 100%);
     }
+}
+
+a{
+    text-decoration: none;
 }

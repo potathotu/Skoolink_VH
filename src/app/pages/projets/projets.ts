@@ -23,6 +23,7 @@ export class Projets {
           startAt: "10 juin",
           endAt: "26 juin",
           status: "En cours",
+          link: ""
         },
 
         {
@@ -32,6 +33,7 @@ export class Projets {
           startAt: "22 mai",
           endAt: "10 juin",
           status: "Terminé",
+          link: ""
         }
       ]
     },
@@ -47,6 +49,7 @@ export class Projets {
           startAt: "17 avril",
           endAt: "21 mai",
           status: "Terminé",
+          link: ""
         }
   
       ]
