@@ -1,1 +1,28 @@
-<p>projets works!</p>
+<div class="container">
+    <div *ngFor="let thematique of thematique">
+        
+        <div class="thematique-container">
+            <div class="content-container">
+
+                <h2>{{thematique.title}}</h2>
+                <hr>
+
+                <div class="projets-container">
+
+                    <p-button *ngFor="let projet of thematique.projets">
+                        <div> 
+                            <p>°{{projet.number}}</p>
+                            <img src="{{projet.img}}">
+                            <hr>
+                            <h3>{{projet.name}}</h3>
+                            <h4>{{projet.startAt}} – {{projet.endAt}}</h4>
+                        </div>
+                    </p-button>
+
+                </div>
+
+            </div>
+        </div>
+        <hr>
+    </div>
+</div>
