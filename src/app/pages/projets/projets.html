@@ -9,7 +9,7 @@
 
                 <div class="projets-container">
 
-                    <p-button *ngFor="let projet of theme.projets">
+                    <p-button *ngFor="let projet of theme.projets" [ngClass]="{'ongoing-project': projet.status == 'En cours', 'finished-project': projet.status == 'Terminé'}">
                         <div> 
                             <p>°{{projet.number}}</p>
                             <img src="{{projet.img}}">
