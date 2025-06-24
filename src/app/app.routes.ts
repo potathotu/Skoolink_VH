@@ -6,6 +6,7 @@ import { LayoutComponent } from './shared/layout/layout.component';
 import { DashBoard } from './pages/dashboard/dashboard';
 import { Thematiques } from './pages/thematiques/thematiques';
 import { Projets } from './pages/projets/projets';
+import { Messagerie } from './pages/messagerie/messagerie';
 
 export const routes: Routes = [
     {   
@@ -46,6 +47,11 @@ export const routes: Routes = [
             {
                 path:"projets",
                 component: Projets
+            },
+
+            {
+                path:"messagerie",
+                component: Messagerie
             }
         ]
     }
