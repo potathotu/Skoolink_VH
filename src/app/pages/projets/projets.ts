@@ -23,7 +23,7 @@ export class Projets {
           startAt: "10 juin",
           endAt: "26 juin",
           status: "En cours",
-          link: ""
+          link: "https://angular.dev/"
         },
 
         {
@@ -33,7 +33,7 @@ export class Projets {
           startAt: "22 mai",
           endAt: "10 juin",
           status: "Terminé",
-          link: ""
+          link: "https://angular.dev/"
         }
       ]
     },
@@ -49,7 +49,7 @@ export class Projets {
           startAt: "17 avril",
           endAt: "21 mai",
           status: "Terminé",
-          link: ""
+          link: "https://app.clickup.com/6918654/home"
         }
   
       ]
