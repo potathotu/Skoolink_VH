@@ -1,15 +1,15 @@
 <div class="container">
-    <div *ngFor="let thematique of thematique">
-        
+    <div *ngFor="let theme of thematique">
+
         <div class="thematique-container">
             <div class="content-container">
 
-                <h2>{{thematique.title}}</h2>
+                <h2>{{theme.title}}</h2>
                 <hr>
 
                 <div class="projets-container">
 
-                    <p-button *ngFor="let projet of thematique.projets">
+                    <p-button *ngFor="let projet of theme.projets">
                         <div> 
                             <p>°{{projet.number}}</p>
                             <img src="{{projet.img}}">
@@ -23,6 +23,6 @@
 
             </div>
         </div>
-        <hr>
+        <hr *ngIf="!(theme.thematique == thematique.length)">
     </div>
 </div>

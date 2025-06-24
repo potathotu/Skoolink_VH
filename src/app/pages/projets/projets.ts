@@ -22,6 +22,7 @@ export class Projets {
           name: "Application de météo",
           startAt: "10 juin",
           endAt: "26 juin",
+          status: "",
         },
 
         {
@@ -30,6 +31,7 @@ export class Projets {
           name: "Pierre-Papier-Ciseaux",
           startAt: "22 mai",
           endAt: "10 juin",
+          status: "",
         }
       ]
     },
@@ -44,10 +46,12 @@ export class Projets {
           name: "Mettre en place un BackLog",
           startAt: "17 avril",
           endAt: "21 mai",
+          status: "",
         }
       ]
     }
 
+  
   ];
 
   constructor(private _pageService: PageService){

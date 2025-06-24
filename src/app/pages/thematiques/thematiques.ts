@@ -51,7 +51,6 @@ export class Thematiques {
       endAt: "00 avril",
       status: "Terminé"
     }
-    
   ];
   
   constructor(private _pageService: PageService){
