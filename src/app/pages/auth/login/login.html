@@ -1,29 +1,30 @@
-<div class="top">
-    <img src="assets/skooda-logo.png">
-    <h1>SKOOLINK</h1>
-</div>
-
-<div class="inputs-container">
-    <h2>CONNEXION</h2>
-
-    <div class="user-container">
-        <p>Identifiant</p>
-        <input type="text" name="User">
+<div>
+    <div class="top">
+        <img src="assets/skooda-logo.png">
+        <h1>SKOOLINK</h1>
     </div>
 
-    <div class="password-container">
-        <p>Mot de passe</p>
-        <input type="text" name="Password">
+    <div class="inputs-container">
+        <h2>CONNEXION</h2>
+
+        <div class="user-container">
+            <p>Identifiant</p>
+            <input type="text" name="User">
+        </div>
+
+        <div class="password-container">
+            <p>Mot de passe</p>
+            <input type="text" name="Password">
+        </div>
     </div>
+
+    <p class="redirector" routerLink="/reset-password">Mot de passe oublié ?</p>
+
+    <div class="radio-group">
+            <input value="remember" type="checkbox" name="radio">
+            <label for="remember">Se souvenir de moi</label>
+    </div>
+
+    <p-button (click)="onConnect()" label="Connexion" icon="fa-solid fa-chevron-right" [rounded]="true" name="connect-button"></p-button>
 </div>
-
-<p class="redirector" routerLink="/reset-password">Mot de passe oublié ?</p>
-
-<div class="radio-group">
-        <input value="remember" type="checkbox" name="radio">
-        <label for="remember">Se souvenir de moi</label>
-</div>
-
-<p-button (click)="onConnect()" label="Connexion" size="large" icon="fa-solid fa-chevron-right" [rounded]="true" name="connect-button"></p-button>
-
 
