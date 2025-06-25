@@ -55,7 +55,7 @@ export class Projets {
       startAt: "00 avril",
       endAt: "00 mai",
       status: "Terminé",
-      link: "https://app.clickup.com/6918654/home",
+      link: "https://figma.com",
       thematique: 2,
       thematiqueImage: "assets/figma-logo.png"
     },
@@ -67,7 +67,7 @@ export class Projets {
       startAt: "00 avril",
       endAt: "00 mai",
       status: "Terminé",
-      link: "https://app.clickup.com/6918654/home",
+      link: "https://about.gitlab.com/",
       thematique: 2,
       thematiqueImage: "assets/gitlab-logo.png"
     }
