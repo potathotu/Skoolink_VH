@@ -1,0 +1,16 @@
+.main-container{
+    display: flex;
+
+    input{
+        margin-bottom: 185px;
+        position: fixed;
+        bottom: 0;
+        font-family: "Aldrich";
+        width: 390px;
+        height: 40px;
+        border-radius: 20px;
+        border-style: hidden;
+        background-color: white;
+        color: black;
+    }
+}

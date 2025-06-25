@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { PageService } from 'app/shared/service/page/page.service';
+import { IconField } from 'primeng/iconfield';
+import { InputIcon } from 'primeng/inputicon';
 
 @Component({
   selector: 'app-messagerie',
-  imports: [],
+  imports: [IconField, InputIcon],
   templateUrl: './messagerie.html',
   styleUrl: './messagerie.scss'
 })
