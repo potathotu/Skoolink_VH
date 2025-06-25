@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { TopBar } from './topbar/topbar';
 import { Navbar } from './navbar/navbar';
-import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-layout',
-  imports: [ButtonModule, TopBar, Navbar, IonApp, IonRouterOutlet],
+  imports: [ButtonModule, TopBar, Navbar, RouterOutlet],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.scss'
 })
