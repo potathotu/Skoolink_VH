@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="button-container" *ngFor="let theme of thematiques">
+        <p-button (click)="selectThematique(theme.id)" [ngClass]="{'selectedThematique': theme?.isActive}">
+            <div class="content-container">
+                <img src={{theme.img}}>
+                <div class="text-container">
+                    <h2>{{ theme.title }}</h2>
+                    <div class="status">
+                        <p-badge [ngClass]="{'ongoingBadge': theme.status == 'En cours', 'finishedBadge': theme.status == 'Terminé'}"/>
+                        <h3>{{ theme.status }}</h3>
+                    </div>
+                    <h4>{{ theme.startAt }} – {{ theme.endAt }}</h4>
+                </div>
+            </div>
+        </p-button>
+        <hr *ngIf="!(theme.id == theme.length)">
+    </div>
+</div>

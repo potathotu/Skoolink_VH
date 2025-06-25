@@ -1,0 +1,80 @@
+.container{
+    display: flex;
+    justify-content: center;
+
+    .navwrapper{
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+
+        .navbar-content{
+            height: 164.24px;
+            width: 412px;
+
+            background-image: linear-gradient(180deg, var(--main-bg-light), var(--secondary-bg-color));
+            
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            
+            .navbar-button-container{
+                border-style: solid;
+                border-color: black;
+
+                border-radius: 20px;
+                width: 390px;
+                height: 85px;
+                position:absolute;
+                bottom: 0;
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                background-color: var(--main-bg-light);
+
+                ::ng-deep .p-button{
+                    margin-left: 15px;
+                    width: 58.33px;
+                    height: 58.33px;
+                    border-radius: 20px;
+                    background-color: #041E33;
+                    border-color: black;
+                    border-width: 2px;
+                    color: white;
+                    
+                    .p-button-icon{
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .currentSection{
+                    ::ng-deep .p-button{
+                        border: 1.25px double transparent;
+                        background-image: linear-gradient(180deg, var(--main-bg-light), var(--secondary-bg-color)), linear-gradient(90deg, var(--skooda-red-color), var(--skooda-green-color));
+                        background-origin: border-box;
+                        background-clip: padding-box, border-box;
+                        box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+                    }
+                }
+            }
+        }
+
+        hr{
+            margin-bottom: 0;
+            width: 100%;
+            height: 6px;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            background-image: linear-gradient(0, var(--main-bg-light), var(--linear-gradient-color));
+            border-style: hidden;
+            text-align: center;
+
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+

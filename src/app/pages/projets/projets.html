@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="content-container">
+
+        <div class="projets-container">
+            <div class="single-projet-container" *ngFor="let projet of projets">
+                
+                <p-button  [ngClass]="{'ongoing-project': projet.status == 'En cours'}">
+                    <a href="{{projet.link}}">
+                        <div> 
+                            
+                            <p>°{{projet.number}}</p>
+                            <img src="{{projet.img}}">
+                            <hr>
+                            <h3>{{projet.name}}</h3>
+                            <h4>{{projet.startAt}} – {{projet.endAt}}</h4>
+                        
+                        </div>
+                    </a>
+                </p-button>
+
+                <p-button class="thematique-card" [ngClass]="{'ongoing-project': projet.status == 'En cours'}">
+                    <img src="{{projet.thematiqueImage}}">
+                </p-button>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
