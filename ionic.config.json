@@ -1,0 +1,7 @@
+{
+  "name": "skoolink",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

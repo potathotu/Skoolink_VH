@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ButtonModule } from 'primeng/button';
 import { BadgeModule } from 'primeng/badge';
 import { OverlayBadgeModule } from 'primeng/overlaybadge';
-import { PageService } from 'app/shared/service/page/page.service';
+import { PageService } from 'src/app/shared/service/page/page.service';
 
 
 

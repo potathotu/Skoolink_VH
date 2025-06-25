@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { PageService } from 'app/shared/service/page/page.service';
 import { ButtonModule } from 'primeng/button';
+import { PageService } from 'src/app/shared/service/page/page.service';
 
 @Component({
   selector: 'app-projets',
